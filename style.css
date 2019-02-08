@@ -1,0 +1,51 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #666;
+  background: #000;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.blobs, .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.blobs {
+  z-index: 1;
+}
+
+.mask {
+  z-index: 2;
+}
+
+h1 {
+  font-weight: normal;
+  font-family: monospace;
+  z-index: 999;
+}
