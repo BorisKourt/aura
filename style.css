@@ -133,9 +133,9 @@ h1 {
 }
 
 .labels {
-  color: #aaa;
+  color: #333;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
   z-index: 999;
 }
 
