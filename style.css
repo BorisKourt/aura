@@ -29,19 +29,27 @@ body {
 .blobs, .mask {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   right: 0;
   bottom: 0;
-  width: 100vw;
-  height: 100vh;
+  margin-left: -41.548183254vh;
+  overflow: hidden;
 }
 
 .blobs {
   z-index: 1;
+  background: #111;
+  width: 83.096366508vh;
+  height: 100vh;
+  /*filter: contrast(200%);*/
 }
 
 .mask {
   z-index: 2;
+  background: url(mask.svg);
+  background-size: cover;
+  width: 83.096366508vh;
+  height: 100vh;
 }
 
 h1 {
@@ -49,3 +57,153 @@ h1 {
   font-family: monospace;
   z-index: 999;
 }
+
+.blob {
+  background-blend-mode: screen;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 11.374407582vh;
+  height: 11.374407582vh;
+  background: #fff;
+  /*box-shadow: 0 0 1.374407582vh 1px inherit;*/
+  filter: blur(20px) contrast(200%) saturate(120%) brightness(1.4);
+  border-radius: 100%;
+  /*animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+  animation-fill-mode: forwards; /* or: backwards, both, none */
+  animation-delay: 1s;
+}
+
+.a {
+  animation: blob-a 5.6s infinite;
+  animation-delay: 0.01s;
+  background: #A58097;
+}
+
+.b {
+  animation: blob-a 5.5s infinite;
+  animation-delay: 11.9s;
+  background: #79658E;
+}
+
+.c {
+  animation: blob-a 5.4s infinite;
+  animation-delay: 3.31s;
+  background: #4C3D59;
+}
+
+.d {
+  animation: blob-b 5.3s infinite;
+  animation-delay: 0.71s;
+  background: #A4C1BF;
+}
+
+.e {
+  animation: blob-b 5.2s infinite;
+  animation-delay: 1.33s;
+  background: #79CAC5;
+}
+
+.f {
+  animation: blob-c 5.1s infinite;
+  animation-delay: 7.7s;
+  background: #247E77;
+}
+
+
+
+@keyframes blob-a {
+  0% {
+    left: 43.346007604%;
+    top: -7.109004739%;
+  }
+  16.6666666667% {
+    left: 43.346007604%;
+    top: 7.109004739%;
+  }
+  33.3333333333% {
+    left: 54.182509505%;
+    top: 21.95892575%;
+  }
+  50% {
+    left: 43.346007604%;
+    top: 42.496050552%;
+  }
+   66.666666% {
+    left: 61.977186311%;
+    top: 67.140600316%;
+  }
+  83.3333333333% {
+    left: 43.346007604%;
+    top: 81.832543443%;
+  }
+  100% {
+    left: 43.346007604%;
+    top: 110%;
+  }
+}
+
+@keyframes blob-b {
+  0% {
+    left: 43.346007604%;
+    top: 110%;
+  }
+  16.6666666667% {
+    left: 43.346007604%;
+    top: 81.832543443%;
+  }
+  33.3333333333% {
+    left: 32.509505703%;
+    top: 58.451816745%;
+  }
+  50% {
+    left: 13.30798479%;
+    top: 42.654028436%;
+  }
+   66.666666% {
+    left: 21.482889733%;
+    top: 21.95892575%;
+  }
+  83.3333333333% {
+    left: 43.346007604%;
+    top: 7.109004739%;
+  }
+  100% {
+    left: 43.346007604%;
+    top: -7.109004739%;
+  }
+}
+
+@keyframes blob-c {
+  0% {
+    left: 43.346007604%;
+    top: 110%;
+  }
+  16.6666666667% {
+    left: 43.346007604%;
+    top: 81.832543443%;
+  }
+  33.3333333333% {
+    left: 32.509505703%;
+    top: 58.451816745%;
+  }
+  50% {
+    left: 43.155893536%;
+    top: 42.654028436%;
+  }
+   66.666666% {
+    left: 21.482889733%;
+    top: 21.95892575%;
+  }
+  83.3333333333% {
+    left: 43.346007604%;
+    top: 7.109004739%;
+  }
+  100% {
+    left: 43.346007604%;
+    top: -7.109004739%;
+  }
+}
+
+
