@@ -81,14 +81,22 @@ h1 {
   position: absolute;
   top: 0;
   left: 0;
-  width: 12.374407582vh;
-  height: 12.374407582vh;
-  /*box-shadow: 0 0 1.374407582vh 1px inherit;*/
+  width: 11.374407582vh;
+  height: 11.374407582vh;
   filter: blur(10px) saturate(120%) brightness(1.4);
   border-radius: 100%;
-  /*animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
-  animation-fill-mode: forwards; /* or: backwards, both, none */
-  animation-delay: 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.blob-inner {
+  width: 50%;
+  height: 50%;
+  background: inherit;
+  filter: saturate(120%) brightness(1.9);
+  border-radius: 100%;
 }
 
 .a {
