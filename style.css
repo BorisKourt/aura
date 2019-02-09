@@ -26,6 +26,19 @@ body {
   overflow: hidden;
 }
 
+.metawrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%:
+  height: 100%;
+  z-index: 3;
+  filter: blur(6px)  saturate(120%) brightness(1);
+  opacity: 0.65;
+}
+
 .blobs, .mask {
   position: absolute;
   top: 0;
@@ -38,10 +51,14 @@ body {
 
 .blobs {
   z-index: 1;
-  background: #111;
+  background: #222;
   width: 83.096366508vh;
   height: 100vh;
   /*filter: contrast(200%);*/
+}
+
+.metawrap .blobs {
+  background: #000;
 }
 
 .mask {
@@ -59,16 +76,15 @@ h1 {
 }
 
 .blob {
-  background-blend-mode: screen;
+  background-blend-mode: hard-light;
   opacity: 0.9;
   position: absolute;
   top: 0;
   left: 0;
-  width: 11.374407582vh;
-  height: 11.374407582vh;
-  background: #fff;
+  width: 12.374407582vh;
+  height: 12.374407582vh;
   /*box-shadow: 0 0 1.374407582vh 1px inherit;*/
-  filter: blur(20px) contrast(200%) saturate(120%) brightness(1.4);
+  filter: blur(10px) contrast(200%) saturate(120%) brightness(1.4);
   border-radius: 100%;
   /*animation-timing-function: ease-out; /* or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
   animation-fill-mode: forwards; /* or: backwards, both, none */
@@ -83,35 +99,33 @@ h1 {
 
 .b {
   animation: blob-a 5.5s infinite;
-  animation-delay: 11.9s;
+  animation-delay: 8.9s;
   background: #79658E;
 }
 
 .c {
   animation: blob-a 5.4s infinite;
-  animation-delay: 3.31s;
+  animation-delay: 13.31s;
   background: #4C3D59;
 }
 
 .d {
   animation: blob-b 5.3s infinite;
-  animation-delay: 0.71s;
+  animation-delay: 40.71s;
   background: #A4C1BF;
 }
 
 .e {
   animation: blob-b 5.2s infinite;
-  animation-delay: 1.33s;
+  animation-delay: 41.33s;
   background: #79CAC5;
 }
 
 .f {
   animation: blob-c 5.1s infinite;
-  animation-delay: 7.7s;
+  animation-delay: 17.7s;
   background: #247E77;
 }
-
-
 
 @keyframes blob-a {
   0% {
