@@ -93,37 +93,37 @@ h1 {
 
 .a {
   animation: blob-a 5.6s infinite;
-  animation-delay: 0.01s;
+  animation-delay: 0.00s;
   background: #A58097;
 }
 
 .b {
   animation: blob-a 5.5s infinite;
-  animation-delay: 8.9s;
+  animation-delay: 3s;
   background: #79658E;
 }
 
 .c {
   animation: blob-a 5.4s infinite;
-  animation-delay: 13.31s;
+  animation-delay: 7.31s;
   background: #4C3D59;
 }
 
 .d {
   animation: blob-b 5.3s infinite;
-  animation-delay: 40.71s;
+  animation-delay: 20.71s;
   background: #A4C1BF;
 }
 
 .e {
   animation: blob-b 5.2s infinite;
-  animation-delay: 41.33s;
+  animation-delay: 27.33s;
   background: #79CAC5;
 }
 
 .f {
   animation: blob-c 5.1s infinite;
-  animation-delay: 17.7s;
+  animation-delay: 11.7s;
   background: #247E77;
 }
 
