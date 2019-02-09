@@ -39,7 +39,7 @@ body {
   opacity: 0.65;
 }
 
-.blobs, .mask {
+.blobs, .mask, .labels {
   position: absolute;
   top: 0;
   left: 50%;
@@ -47,13 +47,13 @@ body {
   bottom: 0;
   margin-left: -41.548183254vh;
   overflow: hidden;
+  width: 83.096366508vh;
+  height: 100vh;
 }
 
 .blobs {
   z-index: 1;
   background: #222;
-  width: 83.096366508vh;
-  height: 100vh;
   /*filter: contrast(200%);*/
 }
 
@@ -65,8 +65,6 @@ body {
   z-index: 2;
   background: url(mask.svg);
   background-size: cover;
-  width: 83.096366508vh;
-  height: 100vh;
 }
 
 h1 {
@@ -77,7 +75,6 @@ h1 {
 
 .blob {
   background-blend-mode: hard-light;
-  opacity: 0.9;
   position: absolute;
   top: 0;
   left: 0;
@@ -95,7 +92,7 @@ h1 {
   width: 50%;
   height: 50%;
   background: inherit;
-  filter: saturate(120%) brightness(1.9);
+  filter: saturate(120%) brightness(1.7);
   border-radius: 100%;
 }
 
@@ -133,6 +130,32 @@ h1 {
   animation: blob-c 5.1s infinite;
   animation-delay: 11.7s;
   background: #247E77;
+}
+
+.labels {
+  color: #aaa;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 999;
+}
+
+.station-a, .station-b {
+  position: absolute;
+  left: 43.536121673%;
+  top: 7.109004739%;
+  width: 11.374407582vh;
+  height: 11.374407582vh;
+  margin-left: 11.374407582vh; 
+  text-align: center;
+  line-height: 11.374407582vh;
+  font-family: monospace;
+  text-transform: lowercase;
+}
+
+
+.station-b {
+  left: 43.536121673%;
+  top: 81.67456556%;
 }
 
 @keyframes blob-a {
