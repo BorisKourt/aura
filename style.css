@@ -24,6 +24,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
 .metawrap {
@@ -86,8 +87,10 @@ h1 {
   align-items: center;
   justify-content: center;
   transition-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform: translate3d(0, 0, 0);
 }
-
 
 .blob-inner {
   width: 50%;
@@ -98,37 +101,43 @@ h1 {
 }
 
 .a {
-  animation: blob-a 5.6s infinite;
+  animation-name: blob-a;
+  animation-duration: 5.6s;
   animation-delay: 0.00s;
   background: #A58097;
 }
 
 .b {
-  animation: blob-a 5.5s infinite;
+  animation-name: blob-a;
+  animation-duration: 5.5s;
   animation-delay: 3s;
   background: #79658E;
 }
 
 .c {
-  animation: blob-a 5.4s infinite;
+  animation-name: blob-a;
+  animation-duration: 5.4s;
   animation-delay: 7.31s;
   background: #4C3D59;
 }
 
 .d {
-  animation: blob-b 5.3s infinite;
+  animation-name: blob-b;
+  animation-duration: 5.3s;
   animation-delay: 20.71s;
   background: #A4C1BF;
 }
 
 .e {
-  animation: blob-b 5.2s infinite;
+  animation-name: blob-b;
+  animation-duration: 5.2s;
   animation-delay: 27.33s;
   background: #79CAC5;
 }
 
 .f {
-  animation: blob-c 5.1s infinite;
+  animation-name: blob-c;
+  animation-duration: 5.1s;
   animation-delay: 11.7s;
   background: #247E77;
 }
@@ -164,11 +173,11 @@ h1 {
     left: 43.346007604%;
     top: -7.109004739%;
   }
-  16.6666666667% {
+  16% {
     left: 43.346007604%;
     top: 7.109004739%;
   }
-  33.3333333333% {
+  33% {
     left: 54.182509505%;
     top: 21.95892575%;
   }
@@ -176,11 +185,11 @@ h1 {
     left: 43.346007604%;
     top: 42.496050552%;
   }
-   66.666666% {
+   66% {
     left: 61.977186311%;
     top: 67.140600316%;
   }
-  83.3333333333% {
+  83% {
     left: 43.346007604%;
     top: 81.832543443%;
   }
@@ -195,11 +204,11 @@ h1 {
     left: 43.346007604%;
     top: 110%;
   }
-  16.6666666667% {
+  16% {
     left: 43.346007604%;
     top: 81.832543443%;
   }
-  33.3333333333% {
+  33% {
     left: 32.509505703%;
     top: 58.451816745%;
   }
@@ -207,11 +216,11 @@ h1 {
     left: 13.30798479%;
     top: 42.654028436%;
   }
-   66.666666% {
+   66% {
     left: 21.482889733%;
     top: 21.95892575%;
   }
-  83.3333333333% {
+  83% {
     left: 43.346007604%;
     top: 7.109004739%;
   }
@@ -226,11 +235,11 @@ h1 {
     left: 43.346007604%;
     top: 110%;
   }
-  16.6666666667% {
+  16% {
     left: 43.346007604%;
     top: 81.832543443%;
   }
-  33.3333333333% {
+  33% {
     left: 32.509505703%;
     top: 58.451816745%;
   }
@@ -238,11 +247,11 @@ h1 {
     left: 43.155893536%;
     top: 42.654028436%;
   }
-   66.666666% {
+   66% {
     left: 21.482889733%;
     top: 21.95892575%;
   }
-  83.3333333333% {
+  83% {
     left: 43.346007604%;
     top: 7.109004739%;
   }
